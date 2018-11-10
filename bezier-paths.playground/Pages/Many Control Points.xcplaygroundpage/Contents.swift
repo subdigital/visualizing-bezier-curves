@@ -354,6 +354,7 @@ class BezierViewController : UIViewController {
     }
 }
 
+
 let vc = BezierViewController()
 PlaygroundPage.current.liveView = vc
 

@@ -232,7 +232,7 @@ class BezierViewController : UIViewController {
             
         case .changed:
             guard let p = dragPoint else { return }
-            bezierView[keyPath: p.keyPath] = recognizer.location(in: bezierView)
+            bezierView[keyPath: p.keyPath] = recognizer.location(in: bezierView) as CGPoint?
             
         case .cancelled, .ended:
             dragPoint = nil
